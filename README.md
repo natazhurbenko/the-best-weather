@@ -1,5 +1,5 @@
 # the-best-weather
-## For install: 
+## Install project: 
   - npm install
 ## Launch project:
   - npm start
