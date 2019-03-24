@@ -1,0 +1,100 @@
+.main {
+  display: flex;
+  height: 100%;
+  overflow: auto;
+  background: #f5f5f5;
+}
+
+.btn {
+  display: block;
+  height: 60px;
+  width: 80vw;
+  max-width: 700px;
+  margin: auto;
+  padding: 0;
+  border-radius: 6px;
+  border: 1px solid #222;
+  line-height: 36px;
+  font-size: 16px;
+  outline: 0;
+  text-transform: uppercase;
+  vertical-align: middle;
+  color: #fff;
+  background-color: #222;
+  text-align: center;
+  letter-spacing: 1px;
+  transition: .2s ease-out;
+  cursor: pointer;
+}
+
+.btn:hover {
+  border-color: #222;
+  background-color: transparent;
+  color: #222;
+}
+
+.container {
+  width: 100%;
+  padding: 40px;
+  color: #222;
+  color: rgba(0,0,0,0.8)
+}
+
+.list__item {
+  display: block;
+  margin-bottom: 30px;
+}
+
+.list-inner {
+  margin-top: 10px;
+  padding-left: 40px;
+}
+
+.list-inner li {
+  margin-bottom: 7px;
+  list-style: disc;
+}
+
+.winner {
+  flex: 1;
+  margin-right: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #333;
+}
+
+.winner li {
+  margin-bottom: 10px;
+}
+
+.big {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.list {
+  margin-bottom: 20px;
+}
+
+.list__ttl {
+  display: block;
+  margin: 0 0 10px 0;
+  font-size: 20px;
+}
+
+.list__subttl {
+  font-size: 16px;
+  margin: 0;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+}
+

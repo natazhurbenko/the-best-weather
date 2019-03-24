@@ -1,0 +1,94 @@
+input[type="checkbox"] {
+  display: none;
+}
+
+a{ color: rgba(43,43,43,1); text-decoration: none; padding: 10px; border-bottom: 2px solid rgba(43,43,43,1); }
+
+a:hover{ background: rgba(43,43,43,1); color: rgba(255,255,255,1); }
+
+
+input[type="checkbox"]:checked ~ div {
+  background: rgba(73,168,68,1);
+  box-shadow: 0 0 2px rgba(73,168,68,1);
+  background: rgba(0,0,0,0.3);
+  box-shadow: 0 0 2px rgba(0,0,0,0.3);
+}
+
+input[type="checkbox"]:checked ~ div label {
+  left: 54px;
+  transform: rotate(360deg);
+}
+
+.checkbox-label,
+label {
+  border-radius: 50px;
+}
+
+.checkbox-label {
+  height: 50px;
+  width: 100px;
+  margin-left: 20px;
+  background: rgba(43, 43, 43, 1);
+  position: relative;
+  box-shadow: 0 0 2px rgba(43,43,43,1);
+  box-shadow: 0 0 2px  rgba(0,0,0,0.3);
+}
+
+label {
+  height: 40px;
+  width: 40px;
+  background: rgba(255, 255, 255, 1);
+  position: absolute;
+  top: 5px;
+  left: 7px;
+  cursor: pointer;
+}
+
+label:before,
+label:after {
+  transition: 400ms all ease-in-out 50ms;
+  box-sizing: border-box;
+  backface-visibility: hidden;
+}
+
+label::before {
+  content: '';
+  height: 30px;
+  width: 5px;
+  position: absolute;
+  top: calc(50% - 15px);
+  left: calc(50% - 2px);
+  transform: rotate(45deg);
+
+}
+
+label::after {
+  content: '';
+  height: 5px;
+  width: 30px;
+  position: absolute;
+  top: calc(50% - 2px);
+  left: calc(50% - 15px);
+  transform: rotate(45deg);
+}
+
+label::before,
+label::after{
+  background: rgba(43,43,43,1);
+  border-radius: 5px;
+}
+
+/* pesduo class on toggle */
+
+input[type="checkbox"]:checked ~ div label::before{
+  height: 30px;
+  top: calc(55% - 17px);
+  left: calc(60% - 6px);
+  background: #222;
+}
+input[type="checkbox"]:checked ~ div label::after{
+  width: 30px;
+  top: calc(95% - 20px);
+  left: calc(22.5% - 4px);
+  background: #222;
+}
