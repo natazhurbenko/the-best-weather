@@ -34,11 +34,11 @@ export const fetchWeather = ( count ) => {
         const temperature = count;
         const humidity = 50;
 
-        let winners = lists.sort( function( prev, next ) {
-          let temporaryPrevTem = Math.abs( prev.main.temp - temperature);
-          let temporaryPrevHumidity  = Math.abs( prev.main.humidity - humidity );
-          let temporaryNextTemp = Math.abs( next.main.temp - temperature );
-          let temporaryNextHumidity  = Math.abs( next.main.humidity - humidity );
+        const winners = lists.sort( function( prev, next ) {
+          const temporaryPrevTem = Math.abs( prev.main.temp - temperature);
+          const temporaryPrevHumidity  = Math.abs( prev.main.humidity - humidity );
+          const temporaryNextTemp = Math.abs( next.main.temp - temperature );
+          const temporaryNextHumidity  = Math.abs( next.main.humidity - humidity );
 
           if( temporaryPrevTem > temporaryNextTemp   ) return 1;
           if( temporaryPrevTem < temporaryNextTemp ) return -1;
